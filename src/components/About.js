@@ -1,59 +1,89 @@
-import React from "react";
+import React from 'react';
+import api from '../assets/icons/api.svg'
+import backend from '../assets/icons/backend.svg'
+import algo from '../assets/icons/algo.svg'
+import computer from '../assets/icons/computer.svg'
+import repair from '../assets/icons/repair.svg'
+import puzzle from '../assets/icons/puzzle.svg'
+
+import Skillcard from './Skillcard';
+import { motion } from 'framer-motion'
+const skills = [
+    {
+        icon: computer,
+        title: "Frontend Development",
+        about: "I can build a beautiful and scalable SPA using HTML, CSS and React.js"
+    },
+    {
+        icon: repair,
+        title: "Backend  Development",
+        about: "handle database, server, api using and SQLlite",
+    },
+    {
+        icon: api,
+        title: "API Development",
+        about: "I can develop robust REST API using django-rest-api "
+    },
+    {
+        icon: algo,
+        title: "Competitive Coder",
+        about: "a daily problem solver in HackerRank and Leetcode"
+    },
+    {
+        icon: puzzle,
+        title: "UI/UX designer",
+        about: "minimalistic user interface designer using figma and  framer"
+    },
+    {
+        icon: computer,
+        title: "Whatever",
+        about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!"
+    },
+]
+
 
 const About = () => {
-  const [header] = React.useState({
-    subHeader: "About Me",
-    text:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.",
-  });
-  const [state] = React.useState([
-    { id: 1, title: "Name:", text: "Jonathan Doe" },
-    { id: 2, title: "Email:", text: "example@domain.com" },
-    { id: 3, title: "Phone:", text: "+1 023 454 345" },
-    { id: 4, title: "Linkedin", text: "Jonathan_123" },
-  ]);
-  return (
-    <div className="about">
-      <div className="container">
-        <div className="common">
-          <h1 className="mainHeader">{header.subHeader}</h1>
-          <p className="mainContent">{header.text}</p>
-          <div className="commonBorder"></div>
-        </div>
-        <div className="row  h-650 alignCenter">
-          <div className="col-6">
-            <div className="about__img">
-              <img src="/images/man-01.png" alt="man" />
-            </div>
-          </div>
-          <div className="col-6">
-            <div className="about__info">
-              <h1>Hi There</h1>
-              <div className="about__info-p1">
-                In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui
-                at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id
-                efficitur sagittis, urna est ultricies eros, ac porta sem turpis
-              </div>
-              <div className="about__info-p2">
-                nunc id efficitur sagittis, urna est ultricies eros, ac porta
-                sem turpis porta sem turpis quis leo. Nulla in feugiat elit
-              </div>
-              <div className="info__contacts">
+    const about_variants = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                dealy: 0.2, duration: 0.6,
+            }
+        },
+        exit: {
+            opacity: 0,
+            transition: {
+                ease: 'easeInOut'
+            }
+        }
+    }
+    return (
+        <motion.div className="about"
+
+            variants={about_variants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+        >
+            <h6 className="about__intro">
+                I describe myself as someone who's persistant, a quick learner and loves problem solving by using simple and scalable solutions.
+            </h6>
+            <div className="container about__container">
+                <h6 className="about__heading">What I offer</h6>
                 <div className="row">
-                  {state.map((info) => (
-                    <div className="col-6">
-                      <strong>{info.title}</strong>
-                      <p>{info.text}</p>
-                    </div>
-                  ))}
+                    {
+                        skills.map(skill =>
+                            <Skillcard skill={skill} />
+
+                        )
+                    }
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+        </motion.div>
+    );
 };
 
 export default About;
