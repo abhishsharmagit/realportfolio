@@ -51,9 +51,9 @@ const Projects = () => {
 
                 }>All</div>
                 <div className={active === 'react.js' && 'projects__navbar-active'} onClick={() => handleFilterCategory('react.js')}>React</div>
-                <div className={active === 'mongoDB' && 'projects__navbar-active'} onClick={() => handleFilterCategory('mongoDB')}>MongoDB</div>
+                <div className={active === 'HTML' && 'projects__navbar-active'} onClick={() => handleFilterCategory('HTML')}>HTML,CSS</div>
                 <div className={active === 'node.js' && 'projects__navbar-active'} onClick={() => handleFilterCategory('node.js')}>Node</div>
-                <div className={active === 'vanilla' && 'projects__navbar-active'} onClick={() => handleFilterCategory('vanilla')}>Vanilla</div>
+                <div className={active === 'vanilla' && 'projects__navbar-active'} onClick={() => handleFilterCategory('vanilla')}>VanillaJS</div>
             </div>
 
             <div className="row">

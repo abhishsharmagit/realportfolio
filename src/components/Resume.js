@@ -40,12 +40,12 @@ const Resume = () => {
                     </h4>
                     <div className="resume-card__body">
                         <h5 className="resume-card__title">
-                            Computer Science Enginnering
+                            Diploma, Computer Science Enginnering
                         </h5>
                         <p className="resume-card__name">
-                            Academy of Technology(2017-2021)
+                            Guru Nanak Dev Institute of Technology(2017-2020)
                         </p>
-                        <p className="resume-card__details">I am currently persuing B.tech in Computer Science Engineering from Academy of Technology</p>
+                        <p className="resume-card__details">Percentage: 74.00%</p>
                     </div>
                 </div>
                 <div className="col-lg-6 resume-card" >
@@ -54,12 +54,12 @@ const Resume = () => {
                     </h4>
                     <div className="resume-card__body">
                         <h5 className="resume-card__title">
-                            Intern
+                            
                         </h5>
                         <p className="resume-card__name">
-                            TCS (2020)
+                            
                         </p>
-                        <p className="resume-card__details">I work as a intern in TCS and also completed some projects on testing</p>
+                        <p className="resume-card__details">worked on some personal projects</p>
                     </div>
                 </div>
             </div>

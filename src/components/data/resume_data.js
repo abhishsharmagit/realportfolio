@@ -3,14 +3,34 @@ import python from '../../assets/icons/python.svg'
 
 const languages = [
     {
-        icon: python,
-        name: 'Python',
-        level: '45'
+        icon: react,
+        name: 'Javascript',
+        level: '70'
     },
     {
         icon: react,
-        name: 'Java',
+        name: 'React.js',
         level: '60'
+    },
+    {
+        icon: react,
+        name: 'Node.js',
+        level: '80'
+    },
+    {
+        icon: react,
+        name: 'Express.js',
+        level: '60'
+    },
+    {
+        icon: react,
+        name: 'Jquery',
+        level: '80'
+    },
+    {
+        icon: react,
+        name: 'Bootstrap',
+        level: '80'
     },
     {
         icon: react,
@@ -19,17 +39,7 @@ const languages = [
     },
     {
         icon: react,
-        name: 'react',
-        level: '60'
-    },
-    {
-        icon: react,
-        name: 'Django',
-        level: '80'
-    },
-    {
-        icon: react,
-        name: 'Bootstrap',
+        name: 'CSS',
         level: '80'
     }
 ]
@@ -40,21 +50,12 @@ const tools = [
         name: 'Figma',
         level: '85'
     },
-    {
-        icon: react,
-        name: 'Photoshop',
-        level: '45'
-    },
-    {
-        icon: react,
-        name: 'Illustrator',
-        level: '60'
-    },
+    
     {
         icon: react,
         name: 'Framer',
         level: '45'
-    },
+    }
 
 ]
 

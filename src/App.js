@@ -1,6 +1,6 @@
 import React from 'react';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
 import Sidebar from './components/Sidebar'
 import Navbar from './components/Navbar';
 import { Route, Redirect, Switch, useLocation } from 'react-router-dom';
