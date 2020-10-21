@@ -56,7 +56,7 @@ const About = () => {
             animate="visible"
             exit="exit"
         >
-            <h6 className="about__intro">
+            <h6 className="about__intro">I have done diploma in Computer Science. 
                 I describe myself as someone who's persistant, a quick learner and loves problem solving by using simple and scalable solutions.
             </h6>
             <div className="container about__container">

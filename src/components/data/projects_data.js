@@ -9,8 +9,24 @@ import COVID from '../../assets/projects_images/COVID.jpg'
 import Dev_talks from '../../assets/projects_images/Dev_talks.jpg'
 import acme from "../../assets/projects_images/Capture.PNG"
 import better from "../../assets/projects_images/Capture2.PNG"
+import bootst from "../../assets/projects_images/bootst.PNG"
+import word from "../../assets/projects_images/wordbeater.PNG"
 
 const data_projects = [
+    {
+        name: 'WordBeater',
+        image: word,
+        deployed_url: 'https://worbeaterjs.netlify.app/',
+        github_url: 'https://github.com/abhishsharmagit/wordbeater',
+        category: ['vanilla']
+    },
+    {
+        name: 'Bootstrap Template',
+        image: bootst,
+        deployed_url: 'https://boottemplate.netlify.app/',
+        github_url: 'https://github.com/abhishsharmagit/bootstraptheme',
+        category: ['HTML']
+    },
     {
         name: 'Responsive Website',
         image: acme,
@@ -34,7 +50,8 @@ const data_projects = [
         github_url: 'https://github.com/abhishsharmagit/mywebsite',
         category: ['react.js']
     },
-
+    
+   
     
 ]
 
