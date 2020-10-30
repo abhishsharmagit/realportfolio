@@ -18,12 +18,12 @@ function App() {
       <div className="container app__container">
         <div className="row app__row">
           
-          <div className="col-3">
+          <div className="col-md-3">
 
             <Sidebar />
 
           </div>
-          <div className="col-9 app__main-content">
+          <div className="col-md-9 app__main-content">
             {/* navbar */}
             <Navbar />
 
