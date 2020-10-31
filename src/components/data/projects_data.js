@@ -11,6 +11,8 @@ import acme from "../../assets/projects_images/Capture.PNG"
 import better from "../../assets/projects_images/Capture2.PNG"
 import bootst from "../../assets/projects_images/bootst.PNG"
 import word from "../../assets/projects_images/wordbeater.PNG"
+import photog from "../../assets/projects_images/photog.PNG"
+import gridstyle from "../../assets/projects_images/gridstyle.PNG"
 
 const data_projects = [
     {
@@ -42,7 +44,21 @@ const data_projects = [
         github_url: "https://github.com/abhishsharmagit/better-website",
         category: ["HTML"]
     },
-
+    {
+        name: 'photography template',
+        image: photog,
+        deployed_url: 'https://photographywebs.netlify.app/',
+        github_url: "https://github.com/abhishsharmagit/photographyweb",
+        category: ["HTML"]
+    },
+    
+    {
+        name: 'Gridstyle template',
+        image: gridstyle,
+        deployed_url: 'https://gridstyle.netlify.app/',
+        github_url: "https://github.com/abhishsharmagit/gridstyle",
+        category: ["HTML"]
+    },
     {
         name: 'React Website',
         image: chatapp,
