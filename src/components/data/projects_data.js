@@ -13,8 +13,16 @@ import bootst from "../../assets/projects_images/bootst.PNG"
 import word from "../../assets/projects_images/wordbeater.PNG"
 import photog from "../../assets/projects_images/photog.PNG"
 import gridstyle from "../../assets/projects_images/gridstyle.PNG"
+import reactdesign from "../../assets/projects_images/reactdesign.PNG"
 
 const data_projects = [
+    {
+        name: 'React Design',
+        image: reactdesign,
+        deployed_url: 'https://reactdesigns.netlify.app/',
+        github_url: 'https://github.com/abhishsharmagit/reactdesign',
+        category: ['react.js']
+    },
     {
         name: 'WordBeater',
         image: word,
